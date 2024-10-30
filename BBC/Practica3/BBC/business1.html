@@ -1,0 +1,69 @@
+<link rel="stylesheet" href="styles.css"/>
+
+<custom-search>
+  <div class="flex p-10 shadow-md min-h-60px">
+    <button class="menu-toggle transparent">≡</button>
+    <aside class="menu-sidebar">
+      <ul>
+        <li><a href="homek.html"></a>Home</li>
+        <li><a href="news1.html"></a>News</li>
+        <li><a href=""></a>Technology</li>
+        <li><a href="sportsK.html">Sports</a></li>
+      </ul>
+    </aside>
+    <span class="logo">
+      <span class="logo-item">K</span>
+      <span class="logo-item">M</span>
+      <span class="logo-item">P</span>
+    </span>
+    <button class="dialog-search transparent">🔍</button>
+  </div>
+  <dialog>
+    <button class="close-btn">🗙</button>
+    <h1>Search</h1>
+    <input type="search" id="site-search" name="q" />
+
+    <template>
+      <li>
+        <div class="flex flex-col items-center card">
+            <img src="https://ichef.bbci.co.uk/news/1536/cpsprodpb/0768/live/40f1a250-9612-11ef-a9c1-65d004933863.jpg.webp" alt="">
+          <div class="flex flex-col justify-between">
+            <h5 class="item-title">
+              <a href="article.html?id={id}">
+                {value}
+              </a>
+            </h5>
+            <p class="item-description">
+            </p>
+            <relative-time time="thu Oct 20 2024 11:12:41 GMT+0200" />
+          </div>
+        </div>
+      </li>
+    </template>
+
+    <ul id="search-results">
+    </ul>
+  </dialog>
+</custom-search>
+
+<main>
+  <custom-article>
+    <article class="block">
+      <h1>Extreme drought areas treble in size since 80s - study</h1>
+      <relative-time time="1729250766363"></relative-time>
+      <img src="https://ichef.bbci.co.uk/news/1536/cpsprodpb/0768/live/40f1a250-9612-11ef-a9c1-65d004933863.jpg.webp" alt="">
+            <p>Nyakuma and her husband Sunday, who live in a village in South Sudan, struggle to find food due to drought </p> 
+            <relative-Time time="Sat Oct 24 2024 18:30:41 GMT+0200"></relative-Time>
+            
+      <p>The area of land surface affected by extreme drought has trebled since the 1980s, a new report into the effects of climate change has revealed.
+
+        Forty-eight per cent of the Earth’s land surface had at least one month of extreme drought last year, according to analysis by the Lancet Countdown on Health and Climate Change - up from an average of 15% during the 1980s.
+        
+        Almost a third of the world - 30% - experienced extreme drought for three months or longer in 2023. In the 1980s, the average was 5%.
+        
+        The new study offers some of the most up-to-date global data on drought, marking just how fast it is accelerating.</p>
+    </article>
+  </custom-article>
+</main>
+
+<script src="main.js"></script>
