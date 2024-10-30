@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="Practica2.css"/>
+
+<custom-search>
+  <div class="flex p-10 shadow-md min-h-60px">
+    <button class="menu-toggle transparent">≡</button>
+    <aside class="menu-sidebar">
+      <ul>
+        <li>Home</li>
+        <li>News</li>
+        <li>Technology</li>
+        <li><a href="sports.html">Sports</a></li>
+      </ul>
+    </aside>
+    <span class="logo">
+      <span class="logo-item">K</span>
+      <span class="logo-item">P</span>
+      <span class="logo-item">M</span>
+    </span>
+    <button class="dialog-search transparent">🔍</button>
+  </div>
+  <dialog>
+    <button class="close-btn">🗙</button>
+    <h1>Search</h1>
+    <input type="search" id="site-search" name="q" />
+
+    <template>
+      <li>
+        <div class="flex flex-col items-center card">
+          <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
+          <div class="flex flex-col justify-between">
+            <h5 class="item-title">
+              <a href="article.html?id={id}">
+                {value}
+              </a>
+            </h5>
+            <p class="item-description">Here are the biggest enterprise technology acquisitions of 2021 so far, in
+              reverse chronological order.
+            </p>
+            <relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
+          </div>
+        </div>
+      </li>
+    </template>
+
+    <ul id="search-results">
+    </ul>
+  </dialog>
+</custom-search>
+
+<main>
+  <custom-article>
+    <article class="block">
+      <h1>'Dick Dastardly' tactics - Hill criticises Verstappen</h1>
+      <relative-time time="1729250766363"></relative-time>
+      <img src="https://ichef.bbci.co.uk/images/ic/1024xn/p0jlxmhs.jpg.webp">
+      <h2>Red Bull's Max Verstappen has been accused of acting like Wacky Races villain Dick Dastardly by former world champion Damon Hill.</h2>
+      <p>Verstappen was handed a combined 20-second penalty for two separate incidents involving title rival Lando Norris during Sunday's Mexico City Grand Prix.
+
+        The Dutchman finished sixth, as McLaren's Norris, who described Verstappen's driving as "dangerous", took second place.
+        
+        "The area footage is very clear," Hill said on a Sky Sports podcast.</p>
+    </article>
+  </custom-article>
+</main>
+
+<script src="main.js"></script>

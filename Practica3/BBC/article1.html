@@ -1,0 +1,66 @@
+<link rel="stylesheet" href="Practica2.css"/>
+
+<custom-search>
+  <div class="flex p-10 shadow-md min-h-60px">
+    <button class="menu-toggle transparent">≡</button>
+    <aside class="menu-sidebar">
+      <ul>
+        <li>Home</li>
+        <li>News</li>
+        <li>Technology</li>
+        <li><a href="sports.html">Sports</a></li>
+      </ul>
+    </aside>
+    <span class="logo">
+      <span class="logo-item">K</span>
+      <span class="logo-item">P</span>
+      <span class="logo-item">M</span>
+    </span>
+    <button class="dialog-search transparent">🔍</button>
+  </div>
+  <dialog>
+    <button class="close-btn">🗙</button>
+    <h1>Search</h1>
+    <input type="search" id="site-search" name="q" />
+
+    <template>
+      <li>
+        <div class="flex flex-col items-center card">
+          <img class="object-cover item-image" src="https://flowbite.com/docs/images/blog/image-4.jpg">
+          <div class="flex flex-col justify-between">
+            <h5 class="item-title">
+              <a href="article.html?id={id}">
+                {value}
+              </a>
+            </h5>
+            <p class="item-description">Here are the biggest enterprise technology acquisitions of 2021 so far, in
+              reverse chronological order.
+            </p>
+            <relative-time time="Wed Oct 16 2024 11:12:41 GMT+0200" />
+          </div>
+        </div>
+      </li>
+    </template>
+
+    <ul id="search-results">
+    </ul>
+  </dialog>
+</custom-search>
+
+<main>
+  <custom-article>
+    <article class="block">
+      <h1>The female freedom fighters of the Haitian Revolution</h1>
+      <relative-time time="1729250766363"></relative-time>
+      <img src="https://ichef.bbci.co.uk/images/ic/1024xn/p0jlxmhs.jpg.webp">
+      <h2>Contemporary paintings celebrate the brave women who fought fiercely alongside the men in the Haitian revolution of the 18th Century. How did they contribute, and why have their stories been buried for so long?</h2>
+      <p>On the night of 23 August 1791 in Cap-Français, on the north coast of Saint Domingue (present-day Haiti), fires raged on the plantations. The enslaved set fire to the buildings and fields, and killed their masters. It was the start of the Haitian Revolution, the only known uprising of enslaved people in history that led to the founding of a state that was free from slavery.
+
+        Meanwhile, on the other side of the Atlantic in France, news was fast spreading about the uprisings. The wealthy ruling elite and those with a monopoly in the transatlantic slave trade were growing anxious. They began to realise that their days of subjugating the enslaved population for profit were coming to an end. The coordinated attacks was the beginning of an armed resistance that sprung up across the country in the following years.
+        
+        The enslaved rebellions ultimately led to the previously unthinkable; the dismantling of the colonial system and the declaration of Haiti's independence in 1804. It was "the first successful large-scale revolt by enslaved people in history", and the country became the first free black republic in the world, and the first independent Caribbean state.</p>
+    </article>
+  </custom-article>
+</main>
+
+<script src="main.js"></script>
