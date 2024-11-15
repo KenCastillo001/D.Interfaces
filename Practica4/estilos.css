@@ -1,0 +1,90 @@
+*{
+    margin: 10px;
+    
+}
+news-viewer {
+    display: grid; 
+    grid-template-columns: repeat(4 , 1fr);
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    font-family: Papyrus, fantasy;
+    background-color: slategray;
+    color: black;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    border: solid skyblue;
+    color: black;
+    background-color: slategray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Papyrus, fantasy;
+}
+.menu{
+    padding: 10px;
+    background-color: slategray;
+    border: solid skyblue;
+    color: black;
+    font-family: Papyrus, fantasy;
+    border-radius: 5px;
+}
+.menu:hover{
+    background-color: white;
+    color: slateblue;
+    font-family: Papyrus, fantasy;
+    transform: scale(1.2);
+}
+
+#popover1{
+    display: absolute;
+    justify-content: space-evenly;
+    background-color: slategray;
+    font-family: Papyrus, fantasy;
+    padding: 30px;
+    border: solid skyblue;
+    border-radius:5px ;
+    box-shadow: 0 0 16px black ;
+}
+#popover1 a{
+    padding: 15px;
+    background-color:white;
+    border: solid skyblue;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+   
+}
+
+ #popover1 a:hover{
+    background-color: slateblue;
+    color: white;
+    border: solid white;
+    font-family: Papyrus, fantasy;
+    
+}
+
+.description{
+    max-height: 70px; 
+    overflow: hidden;
+    transition: max-height 0.3s ease
+}
+
+
+.article{
+    display: block;
+    padding: 10px;
+    padding: 45px;
+    border: solid skyblue;
+    background-color: #f5f5f5;
+   
+    border-radius: 5px;
+}
+
+.article:hover{
+    transform: scale(1.1);
+}
