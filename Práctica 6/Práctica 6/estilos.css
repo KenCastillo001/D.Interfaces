@@ -1,0 +1,196 @@
+
+
+productos-games {
+    display: grid; 
+    grid-template-columns: repeat(3 , 1fr);
+    margin: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+}
+productos-games img{
+   width: 300px;
+   height: 300px;
+}
+.home{
+    display: block;
+    justify-items: center;
+    background-image:url(https://t4.ftcdn.net/jpg/03/81/30/63/240_F_381306373_hdYeuvOHWCCc774ScQiuNXfVFKSm7gte.jpg);
+    
+    height: 650px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    border-radius: 15px;
+}
+.home img{
+    height: 30px;
+    width: 30px;
+}
+
+.home button{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 35px;
+    background-color: steelblue;
+    border: solid black;
+    box-shadow: 0 0 16px black;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+.marca{
+    display: flex;
+    align-items: center;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: solid black;
+    box-shadow: 0 0 16px black ;
+    background-color: white;
+    
+}
+
+.centro{
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    font-family: "Syne Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+  
+  
+}
+.carrito button{
+    padding: auto;
+    border: solid white;
+}
+
+.carrito img{
+    height: 30px;
+    width: 30px;
+}
+
+
+h1{
+    display: flex;
+    justify-content: center;
+    border: solid skyblue;
+    color: black;
+    background-color: slategray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.menu{
+    display: flex;
+    align-items: center;
+    padding: 5pxpx;
+    background-color: white;
+    box-shadow: 0 0 16px black ;
+    border: solid slateblue;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-radius: 5px;
+}
+.menu img{
+    height: 30px;
+    width: 30px;
+}
+.menu:hover{
+    background-color: white;
+    color: slateblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    transform: scale(1.2);
+}
+
+#popover1{
+    display: absolute;
+    justify-content: space-evenly;
+    top: 95px;
+    left: 20px;
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 30px;
+    border: solid black;
+    border-radius:5px ;
+    box-shadow: 0 0 16px black ;
+}
+#popover1 a{
+    display: absolute;
+    grid-template-columns: 1;
+    padding: 15px;
+    background-color:white;
+    border: solid skyblue;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+   
+}
+
+
+ #popover1 a:hover{
+    background-color: slateblue;
+    color: white;
+    border: solid white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+#popover3{
+    display: absolute;
+    justify-content: space-evenly;
+    top: 90px;
+    left: 1000px;
+    background-color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 30px;
+    border: solid black;
+    border-radius:5px ;
+    box-shadow: 0 0 16px black ;
+}
+#popover3 a{
+    display: grid;
+    grid-template-columns: 1;
+    padding: 15px;
+    background-color:white;
+    border: solid skyblue;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+   
+}
+
+
+ #popover3 a:hover{
+    background-color: slateblue;
+    color: white;
+    border: solid white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+
+
+.description{
+    max-height: 50px; 
+    overflow: hidden;
+    transition: max-height 0.3s ease
+}
+
+
+.game{
+    display: block;
+    padding: 45px;
+    border: solid black;
+    background-color: #f5f5f5;
+   
+    border-radius: 5px;
+}
+
+.game:hover{
+    transform: scale(1.1);
+}

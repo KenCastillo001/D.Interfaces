@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="https://cdn.tailwindcss.com"></script> 
+    
+</head>
+<body class="bg-gray-900">
+
+    <header class=" flex justify-between  bg-white dark:bg-gray-900 h-40 shadow-lg shadow-purple-500/50">
+
+            
+    <div class="flex ml-6 flex-col  items-start md:flex-row md:items-center md:justify-between">
+        <button data-popover-target="popover" data-popover-placement="bottom" type="button" class="group inline-block rounded bg-gradient-to-r from-blue-500 via-purple-500 to-blue-500 p-[2px] hover:text-white focus:outline-none focus:ring active:text-opacity-75">
+            <span class="block rounded-sm bg-white px-8 py-3 text-sm font-medium group-hover:bg-transparent" >Categorías</span></button>
+    </div> 
+   
+    <div data-popover id="popover" role="tooltip" class=" absolute z-10 invisible inline-block w-64 text-sm text-gray-500 transition-opacity duration-300 bg-white border border-gray-200 rounded-lg shadow-sm opacity-0 dark:text-gray-400 dark:border-gray-600 dark:bg-gray-800 top-40 left-0">
+        <div class=" ml-22 mt-22 px-3 py-2 bg-gray-100 border-b border-gray-200 rounded-t-lg dark:border-purple-600 dark:bg-gray-700">
+            <h3 class="font-semibold text-gray-900 dark:text-white">Categorias</h3>
+        </div>
+        <div class="px-3 py-2 flex flex-col space-y-2 overflow-y-auto">
+            <a href="indexGames.html">Inicio</a>
+            <a href="Action-Adventure.html">Accion-Aventura</a>
+            <a href="Sports.html">Deportes</a>
+            <a href="Shooter.html">Shooter</a>
+            <a href="Plataformas.html">plataformas</a>
+            <a href="RPG.html">RPG</a>
+            <a href="Simulation.html">Simulación</a>
+            <a href="Horror.html">Terror</a>
+            <a href="Racing.html">Carreras</a>
+            <a href="BattleRoyal.html">Battle Royal</a>
+            
+           
+        </div>
+        <div data-popper-arrow class="ml-22 mt-22"></div>
+    </div>
+
+
+        <div class="mx-auto  max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8">
+          
+        
+            <div class="marca p-2 m-2 h-16">
+                <img class="h-10" src ="maquina-de-garra.png " alt="">
+               
+                <p>.THE. .GAMES. .CAVE.&#174;</p>
+            
+            </div>
+
+          </div>
+        </div>
+
+      
+                
+    <div class="flex items-center gap-6 mr-6">
+
+          
+        <button class="pedidos " popovertarget="popover3">
+            <div class=" flex content-center  align-middle">
+                <img class="h-10 " src="comprar.png" alt="carrito de compra">
+                <span class="rounded-full h-5 w-5 bg-orange-700 h-5 absolute cuenta ">0</span>
+            </div>
+            
+        </button>
+        <div class="sm:flex sm:gap-4">
+          <a
+            class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow dark:hover:bg-teal-500"
+            href="#"
+          >
+            Login
+          </a>
+
+          <div class="hidden sm:flex">
+            <a
+              class="rounded-md bg-gray-100 px-5 py-2.5 text-sm font-medium text-teal-600 dark:bg-gray-800 dark:text-white dark:hover:text-white/75"
+              href="#"
+            >
+              Register
+            </a>
+          </div>
+        </div>
+
+    </div>
+   
+
+        <div id="popover3" popover>
+               
+               <a href=""><img src="pagar.png" alt="">Finalizar pedido</a>
+                
+                <div id="templateTarjeta">
+                    
+
+                </div>
+           
+        </div>
+
+
+      
+      
+    </header>
+
+    <span class="flex items-center mb-6 mt-6">
+        <span class="h-px flex-1 bg-white"></span>
+        <span class="shrink-0 px-6 bg-white">Shooter</span>
+        <span class="h-px flex-1 bg-white"></span>
+      </span>
+
+   
+
+    <div class="elementos bg-gray-900">
+        <productos-games >
+
+        </productos-games>
+    </div>
+
+
+    
+    <template id ="game-collection">
+
+        
+    <a href="#" class=" game relative block rounded-tr-3xl border border-gray-100">
+
+
+
+        <h3  class=" title absolute -right-px -top-px rounded-bl-3xl rounded-tr-3xl bg-purple-600 px-6 py-4 font-medium uppercase tracking-widest text-white"></h3>
+        <img class="image -ml-6 -mt-6 h-80 w-full rounded-bl-3xl rounded-tr-3xl border border-gray-300 object-cover" alt="">
+        <p class="short_description p-4 text-center"></p>
+        <p class="date p-4 text-center"></p>
+        <p class="category p-4 text-center"></p>
+        <p class="rating p-4 text-center"></p>
+        <p class="price p-4 text-center"></p>
+        
+        <button class=" caracteristicas mt-4 block rounded-md border border-indigo-900 bg-indigo-900 px-5 py-3 text-sm font-medium uppercase tracking-widest text-white transition-colors hover:bg-white hover:text-indigo-900" popovertarget="popover2">
+            ver caracteristicas
+        </button>
+        
+        <div class="carrito">
+            <button>
+                <img src="comprar.png" alt="">
+            </button>
+            
+        </div>
+       
+        
+    </a>
+
+    </template>
+    <script src="Shooter.js"></script>
+</body>
+
+<footer class="bg-gray-100 dark:bg-gray-900">
+    <div class="relative mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8 lg:pt-24">
+      <div class="absolute end-4 top-4 sm:end-6 sm:top-6 lg:end-8 lg:top-8">
+        <a
+          class="inline-block rounded-full bg-teal-600 p-2 text-white shadow transition hover:bg-teal-500 sm:p-3 lg:p-4 dark:bg-gray-700 dark:text-teal-300 dark:hover:bg-gray-600"
+         href="indexGames.html"
+        >
+          <span class="sr-only">Back to top</span>
+  
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="size-5"
+            viewBox="0 0 20 20"
+            fill="currentColor"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+              clip-rule="evenodd"
+            />
+          </svg>
+        </a>
+      </div>
+  
+      <div class="lg:flex lg:items-end lg:justify-between">
+        <div>
+          <div class="flex justify-center text-teal-600 lg:justify-start dark:text-teal-300">
+            <div class="marca p-2 m-2 h-16">
+                <img class="h-10" src ="maquina-de-garra.png " alt="">
+               
+                <p>.THE. .GAMES. .CAVE. &#174;</p>
+            
+            </div>
+          </div>
+  
+          <p
+            class="mx-auto mt-6 max-w-md text-center leading-relaxed text-gray-500 lg:text-left dark:text-gray-400"
+          >
+          CONOCE MÁS SOBRE NOSOTROS
+          </p>
+        </div>
+  
+        <ul
+          class="mt-12 flex flex-wrap justify-center gap-6 md:gap-8 lg:mt-0 lg:justify-end lg:gap-12"
+        >
+          <li>
+            <a
+              class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+              href="#"
+            >
+             Nosotros
+            </a>
+          </li>
+  
+          <li>
+            <a
+              class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+              href="#"
+            >
+              Contacto
+            </a>
+          </li>
+  
+          <li>
+            <a
+              class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+              href="#"
+            >
+            Proyectos
+            </a>
+          </li>
+  
+          <li>
+            <a
+              class="text-gray-700 transition hover:text-gray-700/75 dark:text-white dark:hover:text-white/75"
+              href="#"
+            >
+              Blog
+            </a>
+          </li>
+        </ul>
+      </div>
+  
+      <p class="mt-12 text-center text-sm text-gray-500 lg:text-right dark:text-gray-400">
+        Copyright &copy; 2024. All rights reserved.
+      </p>
+    </div>
+  </footer>
+</html>
