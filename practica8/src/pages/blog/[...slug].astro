@@ -1,0 +1,31 @@
+---
+import Article from '../../components/Article.astro';
+import Layout from '../../layouts/layout.astro';
+import { getPosts } from '../../lib/articles';
+
+
+// Genera las rutas dinámicas basadas en los slugs
+export async function getStaticPaths() {
+  const posts = await getPosts(); // Obtén los posts
+  return posts.map((item) => ({
+    params: { slug: item.slug }, // Asegúrate de incluir solo `slug` aquí
+  }));
+}
+
+
+const { slug } = Astro.params;
+
+
+const posts = await getPosts();
+
+
+const article = posts.find((item) => item.slug === slug);
+
+if (!article) {
+  throw new Error(`Artículo con el slug "${slug}" no encontrado.`);
+}
+---
+
+<Layout>
+  <Article {...article} />
+</Layout>

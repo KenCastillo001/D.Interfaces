@@ -1,0 +1,30 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<header>
+	<nav>
+		
+		<div class="bg-purple-800 text-white p-4 flex items-center justify-center h-32 shadow-lg">
+			<div class="text-4xl font-bold tracking-wider flex items-center justify-center">
+			  <img class="mr-4" src="/corona-de-laurel1.png" alt="">
+			  <span class="mr-2">S</span>
+			  <span class="mr-2">•</span>
+			  <span class="mr-2">P</span>
+			  <span class="mr-2">•</span>
+			  <span class="mr-2">Q</span>
+			  <span class="mr-2">•</span>
+			  <span>R</span>
+			  <img class="ml-4" src="/corona-de-laurel1.png" alt="">
+			</div>
+		  </div>
+		<div class="internal-links flex items-center justify-center">
+			<HeaderLink href="/">Home</HeaderLink>
+			<HeaderLink href="/blog">Blog</HeaderLink>
+			<HeaderLink href="/about">About</HeaderLink>
+		</div>
+		
+	</nav>
+</header>
+

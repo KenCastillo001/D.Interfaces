@@ -1,0 +1,30 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	
+	<body class="dark:bg-gray-900 ">
+		<Header />
+		<div class=" flex justify-center items-center ">
+			<img src="Augusto2.png" alt="" >
+			<div class="flex-wrap">
+			<h1>GRANDES </h1>
+			<h1>EMPERADORES </h1>
+			<h1>ROMANOS</h1>
+
+			</div>
+		    
+		</div>
+		
+		<Footer />
+	</body>
+	
+</html>
