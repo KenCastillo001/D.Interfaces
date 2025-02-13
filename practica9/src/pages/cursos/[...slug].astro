@@ -1,0 +1,35 @@
+---
+import Article from '../../components/Article.astro';
+import ArticleComprado from '../../components/ArticleComprado.astro';  // Componente para artículos comprados
+
+import { getPosts } from "../../lib/cursos"
+
+// Genera las rutas dinámicas basadas en los slugs
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  return posts.map((item) => ({
+    params: { slug: item.slug },
+  }));
+}
+
+// Obtener el slug de la URL
+const { slug } = Astro.params;
+
+// Obtener todos los artículos
+const posts = await getPosts();
+
+// Encontrar el artículo que coincide con el slug
+const article = posts.find((item) => item.slug === slug);
+
+// Si no se encuentra el artículo, mostrar un error
+if (!article) {
+  throw new Error(`Artículo con el slug "${slug}" no encontrado.`);
+}
+---
+
+<!-- Renderiza un componente diferente según si el artículo fue comprado o no -->
+{article?.comprado === true ? (
+  <ArticleComprado {...article} />
+) : (
+  <Article {...article} />
+)}

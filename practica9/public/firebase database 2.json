@@ -1,0 +1,261 @@
+{
+    "cursos" :{
+        "curso_1" : {
+            "titulo" : " Java I" ,
+            "imagen" : "/java.png" ,
+            "url" : "https://www.youtube.com/embed/coK4jM5wvko",
+            "categoria" : "Programacion" ,
+            "precio": 35,
+            "nivel" : "Principiante",
+            "contenido" : "",
+            "temario" : [
+                        "✔️Cómo funciona la programación orientada a objetos con Java.",
+                        "✔️Creación de clases, objetos y métodos.",
+                        "✔️Uso de estructuras de control .",
+                        "✔️Desarrollo de aplicaciones sencillas para Android.",
+                        "✔️Introducción a bases de datos con Java y JDBC."],
+            "comprado" :false
+        },
+        "curso_2" : {
+            "titulo" : " Python I" ,
+            "imagen" : "/python.jpg" ,
+            "url" : "https://www.youtube.com/embed/tDYr14IIu_4",
+            "categoria" : "Programacion" ,
+            "precio": 30,
+            "nivel" : "Principiante",
+            "contenido" : "",
+            "temario" : [
+                        "✔️Cómo escribir código en Python desde cero.",
+                        "✔️Manipulación de datos con listas y diccionarios.",
+                        "✔️Creación de funciones y módulos para organizar el código.",
+                        "✔️Uso de Python en diferentes áreas como desarrollo web, automatización, ciencia de datos e inteligencia artificial."
+                    ],
+            "comprado" :false
+        },
+        "curso_3" : {
+            "titulo" : " Spring Boot" ,
+            "imagen" : "/spring-boot.png" ,
+            "url" : "https://www.youtube.com/embed/C_6DqxKbGM8",
+            "categoria" : "Programacion" ,
+            "precio": 35,
+            "nivel" : "Intermedio",
+            "contenido" : "",
+            "temario" : [
+                        "✔️Cómo configurar un proyecto con Spring Boot usando Spring Initializr.",
+                        "✔️Creación de APIs RESTful con Spring MVC y Spring Data JPA.",
+                        "✔️Implementación de seguridad con Spring Security.",
+                        "✔️Integración de Spring Boot con bases de datos SQL y NoSQL.",
+                        "✔️Despliegue de aplicaciones Spring Boot en servidores y plataformas como AWS."],
+            "comprado" :false
+        },
+        "curso_4" : {
+            "titulo" : " Django " ,
+            "imagen" : "/django.jpeg" ,
+            "url" : "https://www.youtube.com/embed/7XO1AzwkPPE",
+            "categoria" : "Programacion" ,
+            "precio": 19,
+            "nivel" : "Intermedio",
+            "contenido" : "",
+            "temario" : [
+                        "✔️Cómo crear aplicaciones web desde cero usando Django.",
+                        "✔️Uso del ORM de Django para gestionar bases de datos de manera eficiente.",
+                        "✔️Creación de vistas, formularios y plantillas en Django.",
+                        "✔️Implementación de autenticación de usuarios y control de acceso.",
+                        "✔️Despliegue de aplicaciones Django en servidores y plataformas como Heroku."],
+            "comprado" :false
+        },
+        "curso_5" : {
+            "titulo" : "Javascript I" ,
+            "imagen" : "/javascript.jpg" ,
+            "url" : "https://www.youtube.com/embed/m2nscBtQEIs",
+            "categoria" : "Programacion" ,
+            "precio": 25,
+            "nivel" : "Principiante",
+            "contenido" : "",
+            "temario" : [
+                        "✔️Cómo agregar JavaScript a una página web.",
+                        "✔️Manipulación del DOM para modificar elementos de la web en tiempo real.",
+                        "✔️Uso de eventos e interacciones con el usuario.",
+                        "✔️Creación de funciones y trabajo con objetos.",
+                        "✔️Manipulación de datos con listas y diccionarios."],
+            "comprado" :false
+        },
+       "curso_6" : {
+            "titulo" : " React" ,
+            "imagen" : "/react.png" ,
+            "url" : "https://www.youtube.com/embed/7iobxzd_2wY",
+            "categoria" : "Desarrollo web" ,
+            "precio": 20,
+            "nivel" : "Intermedio",
+            "contenido" : "",
+            "temario" : ["✔️Cómo crear componentes reutilizables con JSX.",
+                        "✔️Manejo del estado y eventos para interacción en tiempo real.",
+                        "✔️Uso de React Router para navegación entre páginas.",
+                        "✔️Integración con APIs y servicios externos.",
+                        "✔️Optimización del rendimiento y gestión del ciclo de vida de los componentes."],
+            "comprado" :false
+        },
+        "curso_7" : {
+            "titulo" : " Astro" ,
+            "imagen" : "/astro.jpg" ,
+            "url" : "https://www.youtube.com/embed/WHqZAXHZN_w",
+            "categoria" : "Desarrollo web" ,
+            "precio": 20,
+            "nivel" : "Intermedio",
+            "contenido" : "",
+            "temario" : [
+                        "✔️Cómo construir sitios web con Astro y su sintaxis basada en componentes.",
+                        "✔️Integración de otros frameworks como React, Vue y Svelte en un solo proyecto.",
+                        "✔️Uso de plantillas y componentes para un desarrollo ágil y modular.",
+                        "✔️Técnicas de optimización de carga para mejorar el rendimiento del sitio.",
+                        "✔️Despliegue de proyectos en plataformas de hosting como Netlify y Vercel."],
+            "comprado" :false
+        },
+        "curso_8" : {
+            "titulo" : "Web Scraping Javascript " ,
+            "imagen" : "/WSJ.jpg" ,
+            "url" : "https://www.youtube.com/embed/hR0-A6t4gyo",
+            "categoria" : "Desarrollo web" ,
+            "precio": 27,
+            "nivel" : "Intermedio",
+            "contenido" : "",
+            "temario" : [
+                        "✔️Cómo usar Node.js y bibliotecas como Puppeteer para automatizar el scraping de páginas web.",
+                        "✔️Acceso a datos dinámicos cargados mediante JavaScript.",
+                        "✔️Parseo y extracción de datos relevantes desde HTML usando Cheerio.",
+                        "✔️Manejo de sesiones y cookies para scraping de sitios protegidos.",
+                        "✔️Técnicas para evitar bloqueos y respetar las normas de los sitios web."],
+            "comprado" :false
+        },
+        "curso_9" : {
+            "titulo" : " Web Scraping Python" ,
+            "imagen" : "/WSP.png" ,
+            "url" : "https://www.youtube.com/embed/bK3EwIMHm94",
+            "categoria" : "Desarrollo web" ,
+            "precio": 20,
+            "nivel" : "Intermedio",
+            "contenido" : "",
+            "temario" : [
+                        "✔️Cómo usar Python para hacer scraping con bibliotecas como BeautifulSoup y Scrapy.",
+                        "✔️Extracción de datos estructurados como tablas, listas y formularios.",
+                        "✔️Manejo de peticiones HTTP y navegación de páginas con Requests y Selenium.",
+                        "✔️Almacenamiento de datos extraídos en formatos como CSV y JSON.",
+                        "✔️Cómo manejar y evitar bloqueos, respetando la ética y las normativas de scraping."
+],
+            "comprado" :false
+        },
+        "curso_10" : {
+            "titulo" : " C++ I" ,
+            "imagen" : "/C++.jpg" ,
+            "url" : "https://www.youtube.com/embed/TBkA7zgJSdU",
+            "categoria" : "Programacion" ,
+            "precio": 29,
+            "nivel" : "Principiante",
+            "contenido" : "",
+            "temario" : [
+                " ✔️ Como escribir programas eficientes en C++.",
+                " ✔️ Manejo de memoria y optimización del codigo.",
+                " ✔️ Uso de estructuras de datos avanzadas.",
+                " ✔️ Introducción a bibliotecas graficas como SFML para desarrollo de juegos.",
+                " ✔️ Aplicaciones en software de sistemas y simulaciones."
+            ],
+            "comprado" :false
+        },
+        "curso_11" : {
+            "titulo" : " Ruby I" ,
+            "imagen" : "/ruby.jpg" ,
+            "url" : "https://www.youtube.com/embed/Js-5e8SDchI",
+            "categoria" : "Programacion" ,
+            "precio": 32,
+            "nivel" : "Principiante",
+            "contenido" : "",
+            "temario" : [
+                        " ✔️ Cómo escribir tu primer programa en Ruby, entendiendo su sintaxis fácil de leer.",
+                         " ✔️ Principios de la programación orientada a objetos (OOP) en Ruby, creando clases, objetos y métodos.",
+                        " ✔️ Uso de estructuras de datos como arreglos, hashes y cadenas para almacenar y manipular datos.",
+                        " ✔️ Desarrollo web con Ruby on Rails: aprenderás a crear aplicaciones web completas, desde la creación de rutas hasta la gestión de bases de datos.",
+                        " ✔️ Cómo utilizar el sistema de plantillas de Rails y sus herramientas de validación y autenticación de usuarios.",
+                        " ✔️ Introducción al manejo de bases de datos en Ruby con ActiveRecord, el sistema ORM de Rails, para gestionar y almacenar datos de forma eficiente."],
+            "comprado" :false
+        },
+        "curso_12" : {
+            "titulo" : " PHP/MySql" ,
+            "imagen" : "/php_MySql.jpg" ,
+            "url" : "https://www.youtube.com/embed/I75CUdSJifw",
+            "categoria" : "Base de datos" ,
+            "precio": 26,
+            "nivel" : "Principiante",
+            "contenido" : "",
+            "temario" : [
+                        "✔️Cómo gestionar bases de datos, tablas, registros y relaciones.",
+                        "✔️Creación y ejecución de consultas SQL para manipular datos.",
+                        "✔️Exportación e importación de bases de datos entre diferentes entornos.",
+                        "✔️Seguridad y control de acceso en PHPMyAdmin.",
+                        "✔️Optimización de bases de datos para mejorar su rendimiento."],
+            "comprado" :false
+        },
+        "curso_13" : {
+            "titulo" : "Kotlin I" ,
+            "imagen" : "/kotlin.jpg" ,
+            "url" : "https://www.youtube.com/embed/Gj_T8oQpqEs",
+            "categoria" : "Programacion" ,
+            "precio": 25,
+            "nivel" : "Principiante",
+            "contenido" : "",
+            "temario" : [
+                        "✔️Cómo escribir tu primer programa en Kotlin, con su sintaxis simple y directa.",
+                        "✔️Principios de la programación orientada a objetos (OOP) y funcional en Kotlin, creando clases, objetos y funciones de alto nivel.",
+                        "✔️Uso de tipos de datos avanzados, como colecciones y funciones lambda.",
+                        "✔️Desarrollo de aplicaciones móviles para Android, utilizando Android Studio y las últimas herramientas de Kotlin.",
+                        "✔️Integración con bibliotecas modernas y herramientas como Ktor para crear aplicaciones web y APIs.",
+                        "✔️Cómo crear aplicaciones seguras y eficientes, aprovechando las características de Kotlin como la nulabilidad controlada y la programación concisa."],
+            "comprado" :false
+        },
+        "curso_14" : {
+            "titulo" : " Power Bi" ,
+            "imagen" : "/powerBi.jpg" ,
+            "url" : "https://www.youtube.com/embed/oQ4q2CSXP4M",
+            "categoria" : "Analisis de Datos" ,
+            "precio": 35,
+            "nivel" : "Intermedio",
+            "contenido" : "",
+            "temario" : [
+                        "✔️Cómo importar y transformar datos desde diversas fuentes.",    
+                         "✔️Creación de visualizaciones interactivas para una toma de decisiones efectiva.",
+                        "✔️Uso de Power Query y DAX para manipular datos y calcular métricas avanzadas.",
+                        "✔️Integración de Power BI con otros servicios de Microsoft.",
+                        "✔️Cómo compartir informes y colaborar en la nube con Power BI Service."],
+            "comprado" :false
+        },
+        "curso_15" : {
+            "titulo" : " PL/SQL" ,
+            "imagen" : "/PL_SQL.png" ,
+            "url" : "https://www.youtube.com/embed/l6wOghW_gNI",
+            "categoria" : "Base de datos" ,
+            "precio": 25,
+            "nivel" : "Intermedio",
+            "contenido" : "",
+            "temario" : [
+                        "✔️Cómo escribir bloques de código PL/SQL y procedimientos almacenados.",
+                        "✔️Uso de cursores y transacciones para manipular datos.",
+                        "✔️Creación de triggers y funciones personalizadas.",
+                        "✔️Optimización de consultas y manejo eficiente de grandes volúmenes de datos.",
+                        "✔️Cómo integrar PL/SQL con aplicaciones empresariales."],
+            "comprado" :false
+        }
+
+    },
+
+    "usuarios" : {
+        "usuario_1" :{
+            "nombre" : "" ,
+            "email" : "" ,
+            "contraseña" : "" ,
+            "cursos" : {}
+
+
+        }
+
+
+    }
+}
