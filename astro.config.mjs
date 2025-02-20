@@ -2,13 +2,12 @@
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
-// @ts-ignore
 import react from '@astrojs/react';
-
 import tailwind from '@astrojs/tailwind';
 
-// https://astro.build/config
+// Configuración de Astro para GitHub Pages
 export default defineConfig({
-    site: 'https://example.com',
-    integrations: [mdx(), sitemap(), tailwind(),react()],
+  site: 'https://kencastillo001.github.io/D.Interfaces',
+  base: '/D.Interfaces/', // Asegúrate de que coincida con el nombre del repositorio
+  integrations: [mdx(), sitemap(), tailwind(), react()],
 });
