@@ -2,7 +2,7 @@
   "name": "practica",
   "type": "module",
   "version": "0.0.1",
-  "homepage": "https://kencastillo001.github.io/practica8",
+  "homepage": "https://kencastillo001.github.io/",
 
   "scripts": {
     "dev": "astro dev",
