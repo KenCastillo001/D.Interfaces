@@ -1,21 +1,31 @@
 ---
-import { type CollectionEntry, getCollection } from 'astro:content';
-import BlogPost from '../../layouts/BlogPost.astro';
-import { render } from 'astro:content';
+import Article from '../../components/Article.astro';
+import Layout from '../../layouts/layout.astro';
+import { getPosts } from '../../lib/articles';
 
+
+// Genera las rutas dinámicas basadas en los slugs
 export async function getStaticPaths() {
-	const posts = await getCollection('blog');
-	return posts.map((post) => ({
-		params: { slug: post.id },
-		props: post,
-	}));
+  const posts = await getPosts(); // Obtén los posts
+  return posts.map((item) => ({
+    params: { slug: item.slug }, // Asegúrate de incluir solo `slug` aquí
+  }));
 }
-type Props = CollectionEntry<'blog'>;
 
-const post = Astro.props;
-const { Content } = await render(post);
+
+const { slug } = Astro.params;
+
+
+const posts = await getPosts();
+
+
+const article = posts.find((item) => item.slug === slug);
+
+if (!article) {
+  throw new Error(`Artículo con el slug "${slug}" no encontrado.`);
+}
 ---
 
-<BlogPost {...post.data}>
-	<Content />
-</BlogPost>
+<Layout>
+  <Article {...article} />
+</Layout>

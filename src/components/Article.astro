@@ -1,0 +1,29 @@
+---
+import Footer from '../components/Footer.astro';
+const { slug, title, heroImage, description, likes } = Astro.props;
+import Header from '../components/Header.astro';
+
+import LikeButton from '../components/botonlike.jsx'; 
+
+const props = Astro.props
+---
+
+<div class="mx-auto max-w-4xl py-12 px-6 lg:px-8">
+    
+  <article class="prose lg:prose-xl">
+    
+    <div class="flex justify-center items-center">
+        <img class="" src={props.Image}/>
+        
+    </div>
+    <h1 class="h-10 text-xl">{props.title}</h1>
+    <p class="mt-8 mb-10">
+      {props.description}
+    </p>
+   <LikeButton slug={slug} client:load/>
+   
+
+
+  </article>
+  <Footer />
+</div>
